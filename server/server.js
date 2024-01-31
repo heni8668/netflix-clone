@@ -8,11 +8,7 @@ const connectDB = require("./db/conn");
 
 const app = express();
 
-app.use(cors({
-  origin: ['https://netflix-clone-evangadi-bt7f9ma7n-henoks-projects-385ca9f9.vercel.app'],
-  methods: ['POST', 'GET'],
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 
 // mongoose
